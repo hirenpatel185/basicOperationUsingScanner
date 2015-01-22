@@ -180,19 +180,21 @@ public class Assign22014F {
      */
     public static void doExercise16() {
         // TODO: Complete Exercise #16 Below
+        
+        Scanner sc = new Scanner(System.in);
         String strName = new String();
         String strCity = new String();
         String strCollege = new String();
         String strProf = new String();
         String strTypeAnimal = new String();
         String strPetName = new String();
-        int age=0;
-        Scanner sc = new Scanner(System.in);
+        String age=new String();
+        
         System.out.println("His or her name");
         strName = sc.nextLine();
         System.out.println("His or her age");
-        age = sc.nextInt();
-        sc.nextLine();
+        age = sc.nextLine();
+        //sc.nextLine();
         System.out.println("the name of a city");
         strCity = sc.nextLine();
         System.out.println("the name of a College");
@@ -203,10 +205,10 @@ public class Assign22014F {
         strTypeAnimal = sc.nextLine();
         System.out.println("A pet's name");
         strPetName = sc.nextLine();
-        System.out.println("\nThere once was a person named " + strName + " who lived in " + strCity + ". At the age of " + age + ",\n"
-                + strName + " went to college at " + strCollege + ". " + strName + " graduated and went to work as a\n"
-                + " " + strProf + ". Then," + strName + " adopted a(n) " + strTypeAnimal + " named " + strPetName + ". They both\n"
-                + "lived happily ever after.");
+        System.out.println("\nThere once was a person named " + strName + " who lived in " + strCity + ". At the age of " + age +", "
+                + strName + " went to college at " + strCollege + ". " + strName + " graduated and went to work as a"
+                + " " + strProf + ". Then, " + strName + " adopted a(n) " + strTypeAnimal + " named " + strPetName + ". They both"
+                + " lived happily ever after.");
                
         
 
