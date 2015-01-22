@@ -67,28 +67,15 @@ public class Assign22014F {
     public static void doExercise4() {
         // TODO: Complete Exercise #4 Below
         int i, j, s;
-        for (i = 1; i <= 7; i = i + 2) {
-            for (s = 7 - i; s > 0; s--) {
-                System.out.print(" ");
-            }
-            for (j = 1; j <= i; j++) {
-                if (i % 2 == 1) {
-                    System.out.print("* ");
-                }
-            }
-            System.out.print("\n");
-        }
-        for (i = 5; i >= 1; i = i - 2) {
-            for (s = 1; s <= (6 - i); s++) {
-                System.out.print(" ");
-            }
-            for (j = 1; j <= i; j++) {
-                if (i % 2 == 1) {
-                    System.out.print("* ");
-                }
-            }
-            System.out.print("\n");
-        }
+        System.out.println("*");
+        System.out.println("***");
+        System.out.println("*****");
+        System.out.println("*******");
+        System.out.println("*****");
+        System.out.println("***");
+        System.out.println("*");
+        
+        
 
     }
 
@@ -127,13 +114,14 @@ public class Assign22014F {
         int testScore1, testScore2, testScore3;
         float avgScore;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter test score 1 :");
-        testScore1 = sc.nextInt();
-        System.out.println("Enter test score 2 :");
+        System.out.println("Enter test1 :");
+         testScore1 = sc.nextInt();
+        System.out.println("Enter test2 :");
         testScore2 = sc.nextInt();
-        System.out.println("Enter test score 3 :");
-        testScore3 = sc.nextInt();
-        avgScore = (testScore1 + testScore2 + testScore3) / 3;
+        System.out.println("Enter test3 :");
+         testScore3 = sc.nextInt();
+        System.out.println("Test1: "+testScore1+"Test2: "+testScore2+"Test3: "+testScore3);
+        avgScore = (float)(testScore1 + testScore2 + testScore3) / 3;
         System.out.println("Average Score is :" + avgScore);
 
     }
@@ -152,19 +140,19 @@ public class Assign22014F {
      */
     public static void doExercise12() {
         // TODO: Complete Exercise #12 Below
-        String strCity = new String();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter City Name :");
+        String strCity = new String();
+        System.out.println("enter the name of his or her favourite city");
         strCity = sc.nextLine();
-        System.out.println("Your City is: " + strCity);
+        //System.out.println("Your City is: " + strCity);
         int strCount = strCity.length();
-        System.out.println("Number of Characters in String :" + strCity + " is " + strCount);
+        System.out.println("The number of characters in the city name " + strCount);
         String strUpper = strCity.toUpperCase();
-        System.out.println("String in Upper Case:" + strUpper);
+        System.out.println("The name of the city in all uppercase letters " + strUpper);
         String strLower = strCity.toLowerCase();
-        System.out.println("String in Lower Case:" + strLower);
+        System.out.println("The name of the city in all lowercase letters " + strLower);
         char firstCharCity = strCity.charAt(0);
-        System.out.println("First Character of City name:" + firstCharCity);
+        System.out.println("The first character in the name of the city " + firstCharCity);
 
     }
 
@@ -200,25 +188,27 @@ public class Assign22014F {
         String strPetName = new String();
         int age=0;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Your Name :");
+        System.out.println("His or her name");
         strName = sc.nextLine();
-        System.out.println("Enter Your Age :");
+        System.out.println("His or her age");
         age = sc.nextInt();
         sc.nextLine();
-        System.out.println("Enter Your City :");
+        System.out.println("the name of a city");
         strCity = sc.nextLine();
-        System.out.println("Enter Your College :");
+        System.out.println("the name of a College");
         strCollege = sc.nextLine();
-        System.out.println("Enter Your Profession :");
+        System.out.println("A profession");
         strProf = sc.nextLine();
-        System.out.println("Enter Your Pet's Type :");
+        System.out.println("A type of animal");
         strTypeAnimal = sc.nextLine();
-        System.out.println("Enter Your Pet's Name :");
+        System.out.println("A pet's name");
         strPetName = sc.nextLine();
-        System.out.println("\nThere once was a person named" + strName + " who lived in" + strCity + ". At the age of " + age + ",\n"
+        System.out.println("\nThere once was a person named " + strName + " who lived in " + strCity + ". At the age of " + age + ",\n"
                 + strName + " went to college at " + strCollege + ". " + strName + " graduated and went to work as a\n"
-                + "      " + strProf + ". Then," + strName + " adopted a(n) " + strTypeAnimal + " named " + strPetName + ". They both\n"
-                + "      lived happily ever after.");
+                + " " + strProf + ". Then," + strName + " adopted a(n) " + strTypeAnimal + " named " + strPetName + ". They both\n"
+                + "lived happily ever after.");
+               
+        
 
     }
 }

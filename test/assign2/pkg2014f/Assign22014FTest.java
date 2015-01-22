@@ -118,7 +118,7 @@ public class Assign22014FTest {
      */
     @Test
     public void testDoExercise16() {
-        String fakeInput = "Bob\n14\nSarnia\nLambton College\nProgrammer\nDog\nRex\n";
+        String fakeInput = "Bob\nSarnia\n14\nLambton College\nProgrammer\nDog\nRex\n";
         byte[] fakeInputArray = fakeInput.getBytes();
         String expected = 
                 "There once was a person named Bob who lived in Sarnia. At the age of 14,"
